@@ -5,11 +5,25 @@
 [sub_resource type="GDScript" id="GDScript_puh4d"]
 script/source = "extends CharacterBody2D
 
+@onready var _skin: Sprite2D = %Skin
+const RUNNER_DOWN = preload(\"uid://c0i1ik45p7rhh\")
+const RUNNER_DOWN_LEFT = preload(\"uid://bork38ywg3paf\")
+const RUNNER_DOWN_RIGHT = preload(\"uid://cst3aklarj68\")
+const RUNNER_LEFT = preload(\"uid://bk7kvspkijqac\")
+const RUNNER_RIGHT = preload(\"uid://b4etxv4c5w1mq\")
+const RUNNER_UP = preload(\"uid://dtrvq16cx035\")
+const RUNNER_UP_LEFT = preload(\"uid://b5yil62vnj1o7\")
+const RUNNER_UP_RIGHT = preload(\"uid://c7x3s5c2r5l86\")
+
 var max_speed := 600.0
 func _physics_process(_delta: float) -> void:
 	var direction :=Input.get_vector(\"move_left\",\"move_right\",\"move_up\",\"move_down\")
 	velocity = direction * max_speed
 	move_and_slide()
+	if direction.x >0.0 and direction.y >0.0:
+		_skin.texture = RUNNER_DOWN_RIGHT
+	elif direction.x <0.0 and direction.y >0.0:
+		_skin.texture =RUNNER_DOWN_LEFT
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h1hi2"]
@@ -20,6 +34,7 @@ motion_mode = 1
 script = SubResource("GDScript_puh4d")
 
 [node name="Skin" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 texture = ExtResource("1_puh4d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
