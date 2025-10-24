@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://btmrp4i4i0whr"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_2v8fs"]
+[ext_resource type="Script" uid="uid://1h6myedkyblx" path="res://character_body_2d.gd" id="1_2v8fs"]
 [ext_resource type="Texture2D" uid="uid://c0i1ik45p7rhh" path="res://assets/runner_down.png" id="2_kv0vp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03faw"]
@@ -11,6 +11,7 @@ motion_mode = 1
 script = ExtResource("1_2v8fs")
 
 [node name="Skin" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 texture = ExtResource("2_kv0vp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
