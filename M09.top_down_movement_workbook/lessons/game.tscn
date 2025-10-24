@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c62bk8cggi6yq"]
+
+[ext_resource type="PackedScene" uid="uid://btmrp4i4i0whr" path="res://lessons/runner.tscn" id="1_yasw7"]
+[ext_resource type="PackedScene" uid="uid://l5vkm11cgaib" path="res://lessons/simple_obstacle.tscn" id="2_4o7yg"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
+
+[node name="simple obstacle" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(332, 481)
