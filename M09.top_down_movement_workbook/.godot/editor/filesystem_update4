@@ -1,4 +1,6 @@
+res://lessons/runner.tscn
 res://addons/gdpractice/assets/theme.tres
 res://lessons/simple_obstacle.tscn
 res://lessons/game.tscn
-res://lessons/runner.tscn
+res://character_body_2d.gd
+res://lessons/circut.tscn

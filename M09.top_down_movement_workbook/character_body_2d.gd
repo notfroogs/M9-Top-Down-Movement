@@ -19,8 +19,12 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 	var direction_discrete := direction.sign()
 	match direction_discrete:
-		Vector2.RIGHT, Vector2.RIGHT:
+		Vector2.RIGHT, Vector2.LEFT:
 			_skin.texture = RUNNER_RIGHT
+		Vector2.UP:
+			_skin.texture = RUNNER_UP
+		Vector2.DOWN:
+			_skin.texture = RUNNER_DOWN
 		UP_RIGHT,UP_LEFT:
 			_skin.texture = RUNNER_RIGHT
 		DOWN_RIGHT,DOWN_LEFT:

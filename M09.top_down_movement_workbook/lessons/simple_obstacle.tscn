@@ -6,11 +6,13 @@
 size = Vector2(128, 111)
 
 [node name="simple obstacle" type="StaticBody2D"]
+position = Vector2(0, 74)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 74)
 texture = ExtResource("1_uln8b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -5.5)
+position = Vector2(0, 74)
 shape = SubResource("RectangleShape2D_xp5q6")
-debug_color = Color(0.9824814, 0, 0.3660021, 0.41960785)
+debug_color = Color(0.982481, 0, 0.366002, 0.419608)

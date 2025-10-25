@@ -1,11 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://c62bk8cggi6yq"]
+[gd_scene load_steps=5 format=3 uid="uid://c62bk8cggi6yq"]
 
+[ext_resource type="Texture2D" uid="uid://cyi426tkmrmjy" path="res://assets/circuit_obstacle.png" id="1_mhfxf"]
 [ext_resource type="PackedScene" uid="uid://btmrp4i4i0whr" path="res://lessons/runner.tscn" id="1_yasw7"]
 [ext_resource type="PackedScene" uid="uid://l5vkm11cgaib" path="res://lessons/simple_obstacle.tscn" id="2_4o7yg"]
+[ext_resource type="PackedScene" uid="uid://jkbkug37g4vw" path="res://lessons/circut.tscn" id="4_d0cqr"]
 
 [node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Circut BG" type="Sprite2D" parent="."]
+z_index = -1
+y_sort_enabled = true
+texture = ExtResource("1_mhfxf")
+metadata/_edit_lock_ = true
 
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
 
+[node name="Camera2D" type="Camera2D" parent="Runner"]
+
 [node name="simple obstacle" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(332, 481)
+position = Vector2(447, 329)
+
+[node name="simple obstacle2" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-983, 698)
+
+[node name="simple obstacle3" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-690, -890)
+
+[node name="Circut" parent="." instance=ExtResource("4_d0cqr")]
+metadata/_edit_lock_ = true
