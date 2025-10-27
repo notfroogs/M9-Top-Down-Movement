@@ -6,7 +6,7 @@
 size = Vector2(128, 111)
 
 [node name="simple obstacle" type="StaticBody2D"]
-position = Vector2(0, 74)
+position = Vector2(0, -37)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 74)
