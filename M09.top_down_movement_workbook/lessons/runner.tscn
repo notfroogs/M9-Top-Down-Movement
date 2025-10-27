@@ -1,12 +1,35 @@
-[gd_scene load_steps=8 format=3 uid="uid://btmrp4i4i0whr"]
+[gd_scene load_steps=14 format=3 uid="uid://btmrp4i4i0whr"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_2v8fs"]
 [ext_resource type="PackedScene" uid="uid://bm8s1oaoxngwq" path="res://assets/runner/runner_visual_red.tscn" id="2_5thop"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_dkhr8"]
 [ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="4_0wt2d"]
+[ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="5_c0vfh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03faw"]
 radius = 23.0
+
+[sub_resource type="Curve" id="Curve_kwa6o"]
+_data = [Vector2(0.872449, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.021978), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_wvyxj"]
+curve = SubResource("Curve_kwa6o")
+
+[sub_resource type="Curve" id="Curve_yu2bb"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_q4snt"]
+curve = SubResource("Curve_yu2bb")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bq1bm"]
+particle_flag_disable_z = true
+gravity = Vector3(0, -10, 0)
+scale_min = 0.5
+scale_max = 0.7
+scale_curve = SubResource("CurveTexture_q4snt")
+alpha_curve = SubResource("CurveTexture_wvyxj")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wvxkf"]
 shader = ExtResource("4_0wt2d")
@@ -39,6 +62,12 @@ size = Vector2i(124, 150)
 unique_name_in_owner = true
 position = Vector2(62, 120)
 scale = Vector2(0.5, 0.5)
+
+[node name="Dust" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_bq1bm")
+texture = ExtResource("5_c0vfh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_wvxkf")

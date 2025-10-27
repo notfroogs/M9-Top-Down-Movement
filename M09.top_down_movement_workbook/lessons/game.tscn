@@ -15,6 +15,7 @@ texture = ExtResource("1_mhfxf")
 metadata/_edit_lock_ = true
 
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
+z_index = 1
 
 [node name="Camera2D" type="Camera2D" parent="Runner"]
 
