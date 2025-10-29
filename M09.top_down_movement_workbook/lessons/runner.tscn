@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://btmrp4i4i0whr"]
 
-[ext_resource type="Script" uid="uid://1h6myedkyblx" path="res://character_body_2d.gd" id="1_2v8fs"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_2v8fs"]
 [ext_resource type="PackedScene" uid="uid://bm8s1oaoxngwq" path="res://assets/runner/runner_visual_red.tscn" id="2_5thop"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_dkhr8"]
-[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="4_0wt2d"]
+[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="4_0wt2d"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="5_c0vfh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03faw"]
@@ -46,7 +46,7 @@ script = ExtResource("1_2v8fs")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 self_modulate = Color(0, 0, 0, 0.156863)
-position = Vector2(0, -15.999985)
+position = Vector2(0, -16)
 scale = Vector2(0.59375, 0.515625)
 texture = ExtResource("2_dkhr8")
 
@@ -67,8 +67,8 @@ scale = Vector2(0.5, 0.5)
 unique_name_in_owner = true
 position = Vector2(0, -66)
 emitting = false
-texture = ExtResource("5_c0vfh")
 process_material = SubResource("ParticleProcessMaterial_bq1bm")
+texture = ExtResource("5_c0vfh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_wvxkf")

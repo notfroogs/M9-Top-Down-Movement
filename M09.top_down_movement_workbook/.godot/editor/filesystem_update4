@@ -2,5 +2,8 @@ res://lessons/game.tscn
 res://addons/gdpractice/assets/theme.tres
 res://assets/character_contour.gdshader
 res://lessons/runner.tscn
-res://lessons/circut.tscn
 res://lessons/simple_obstacle.tscn
+res://lessons/circut.tscn
+res://lessons/test_particles.tscn
+res://character_body_2d.gd
+res://lessons/game.gd
