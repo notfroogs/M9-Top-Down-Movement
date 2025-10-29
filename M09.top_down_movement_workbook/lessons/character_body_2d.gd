@@ -19,7 +19,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, deacceleration * delta)
 	move_and_slide()
-	var direction_discrete := direction.sign()
+	var _direction_discrete := direction.sign()
 	if direction.length() > 0.0:
 		_runner_visual.angle = rotate_toward(_runner_visual.angle, direction.orthogonal().angle(), 8.0 * delta)
 		var current_speed_percent = velocity.length()/max_speed
