@@ -1,6 +1,3 @@
-res://lessons/runner.tscn
+res://lessons/game.tscn
 res://addons/gdpractice/assets/theme.tres
 res://assets/character_contour.gdshader
-res://lessons/character_body_2d.gd
-res://lessons/game.tscn
-res://lessons/game.gd
