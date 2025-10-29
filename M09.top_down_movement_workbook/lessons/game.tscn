@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c62bk8cggi6yq"]
+[gd_scene load_steps=11 format=3 uid="uid://c62bk8cggi6yq"]
 
 [ext_resource type="Texture2D" uid="uid://cyi426tkmrmjy" path="res://assets/circuit_obstacle.png" id="1_mhfxf"]
 [ext_resource type="Script" uid="uid://brqwsvyu3k3gi" path="res://lessons/game.gd" id="1_qqcej"]
@@ -8,10 +8,29 @@
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="5_sepuf"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_viysf"]
 [ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
+[ext_resource type="Shader" uid="uid://dp1hn66gsihpv" path="res://assets/blur.gdshader" id="9_tpjcj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8c4bg"]
+shader = ExtResource("9_tpjcj")
+shader_parameter/blur_amount = 0.0
+shader_parameter/tint = Color(0, 0, 0, 1)
+shader_parameter/tint_strength = 0.0
+shader_parameter/saturation = 1.0
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_qqcej")
+
+[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
+unique_name_in_owner = true
+position = Vector2(1936, 1272)
+
+[node name="Camera2D" type="Camera2D" parent="Runner"]
+
+[node name="FinishLine" parent="." instance=ExtResource("5_sepuf")]
+unique_name_in_owner = true
+position = Vector2(574, 1171)
+area_width = 256
 
 [node name="Circut BG" type="Sprite2D" parent="."]
 z_index = -1
@@ -19,12 +38,6 @@ position = Vector2(3999, 0)
 texture = ExtResource("1_mhfxf")
 centered = false
 offset = Vector2(-4000, 0)
-
-[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
-unique_name_in_owner = true
-position = Vector2(1936, 1272)
-
-[node name="Camera2D" type="Camera2D" parent="Runner"]
 
 [node name="simple obstacle" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(2365, 1685)
@@ -38,11 +51,6 @@ position = Vector2(1228, 466)
 [node name="Circut" parent="." instance=ExtResource("4_d0cqr")]
 visible = false
 position = Vector2(1918, 1355)
-
-[node name="FinishLine" parent="." instance=ExtResource("5_sepuf")]
-unique_name_in_owner = true
-position = Vector2(574, 1171)
-area_width = 256
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -66,3 +74,52 @@ vertical_alignment = 1
 script = ExtResource("8_tpjcj")
 metadata/_custom_type_script = "uid://57e8080cpukf"
 metadata/_edit_use_anchors_ = true
+
+[node name="PauseScreen" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueColorRect" type="ColorRect" parent="CanvasLayer/PauseScreen"]
+material = SubResource("ShaderMaterial_8c4bg")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UIPanelContainer" type="PanelContainer" parent="CanvasLayer/PauseScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -120.0
+offset_right = 195.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PauseScreen/UIPanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PauseScreen/UIPanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/PauseScreen/UIPanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PauseScreen/UIPanelContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="ResumeButton" type="Button" parent="CanvasLayer/PauseScreen/UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/PauseScreen/UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
