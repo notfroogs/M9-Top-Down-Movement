@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761771028
+::res://::1761945874
 icon_top_down_movement.png::CompressedTexture2D::4888025430757072173::1761343336::1761343336::1::::<><><>0<>0<>278a31cceaf4fd1ac4fa526feddff505<>res://.godot/imported/icon_top_down_movement.png-5b34b927509b2074787baa5f56614707.ctex::
 ::res://addons/::1761343336
 ::res://addons/gdpractice/::1761343336
@@ -10,7 +10,7 @@ gdpractice.gd::GDScript::5979087022897298672::1761343336::0::1::::<>EditorPlugin
 metadata.gd::GDScript::2985675861330059244::1761343336::0::1::::<>Node<><>0<>1<><>::
 paths.gd::GDScript::82790454512892745::1761343336::0::1::::<>RefCounted<><>0<>0<><>::
 plugin.cfg::TextFile::-1::1761343336::0::1::::<><><>0<>0<><>::
-::res://addons/gdpractice/assets/::1761767970
+::res://addons/gdpractice/assets/::1761771033
 checkbox_empty.svg::CompressedTexture2D::159996384623349208::1761343336::1761343336::1::::<><><>0<>0<>598dc4add218d9d5087c0b768f3f8114<>res://.godot/imported/checkbox_empty.svg-670795e6630909b934b40801062ec14f.ctex::
 checkbox_ticked.svg::CompressedTexture2D::4681739381960142151::1761343336::1761343336::1::::<><><>0<>0<>feef3bff4427a5ead447a97d1f78ae1b<>res://.godot/imported/checkbox_ticked.svg-564ad4b3ab0ae5c1e5fc8f01f4337ab7.ctex::
 dash_border.png::CompressedTexture2D::5174105164185721961::1761343336::1761343336::1::::<><><>0<>0<>51fd3bc3371ac41d03f2acb315908f71<>res://.godot/imported/dash_border.png-62c45c79b21ca5931452928502aa8536.ctex::
@@ -19,7 +19,7 @@ input_arrow.svg::CompressedTexture2D::4441352498702649159::1761343336::176134333
 input_mouse_base.svg::CompressedTexture2D::7057538906146452317::1761343336::1761343336::1::::<><><>0<>0<>798cb92b4c8bd8241e6e61da28ac405c<>res://.godot/imported/input_mouse_base.svg-dbf80cc9a5deece90e8d05ef17a0c72f.ctex::
 input_mouse_left_click.svg::CompressedTexture2D::3923731288610382921::1761343336::1761343336::1::::<><><>0<>0<>3f302bc6847b6a4de76d55598b2ab2d7<>res://.godot/imported/input_mouse_left_click.svg-be147924c06daa7ed438424ff9b7c06d.ctex::
 new_style_box_flat.tres::StyleBoxFlat::2828730235135847896::1761343336::0::1::::<><><>0<>0<><>::
-theme.tres::Theme::3147173487228338806::1761767970::0::1::::<><><>0<>0<><>::
+theme.tres::Theme::3147173487228338806::1761771033::0::1::::<><><>0<>0<><>::
 ::res://addons/gdpractice/assets/fonts/::1761343336
 Inter-Bold.ttf::FontFile::9167500186177253915::1761343336::1761343336::1::::<><><>0<>0<>98e9463ff5bddf773565b8f3c3eac49a<>res://.godot/imported/Inter-Bold.ttf-8d68871aa6b1ad81a20ff97664dd0e9f.fontdata::
 Inter-BoldItalic.otf::FontFile::546728191683957199::1761343336::1761343336::1::::<><><>0<>0<>f5f3d0151b687c55a16c360c75dfb124<>res://.godot/imported/Inter-BoldItalic.otf-3cddc448bbbebbbbd6abf92d039f40c5.fontdata::
@@ -102,9 +102,9 @@ reset_net_injector.gd::GDScript::6524666569539532765::1761343336::0::1::::<>Node
 ::res://addons/gdquest_theme_utils/::1761343336
 README.md::TextFile::-1::1761343336::0::1::::<><><>0<>0<><>::
 theme_utils.gd::GDScript::8570643529736897997::1761343336::0::1::::<>RefCounted<><>0<>1<><>::
-::res://assets/::1761767970
+::res://assets/::1761771033
 blur.gdshader::Shader::8266218437935253007::1761343336::0::1::::<><><>0<>0<><>::
-character_contour.gdshader::Shader::3945310154349281679::1761767970::0::1::::<><><>0<>0<><>::
+character_contour.gdshader::Shader::3945310154349281679::1761771033::0::1::::<><><>0<>0<><>::
 circle_32x32.png::CompressedTexture2D::8611442966255701042::1761343336::1761343336::1::::<><><>0<>0<>78ce9c32c1e67fcad39fe0aa82ace6ca<>res://.godot/imported/circle_32x32.png-443e57da8bb46fc6b8e87d5458c03b79.ctex::
 circle_64x64.png::CompressedTexture2D::3123050219582670775::1761343336::1761343336::1::::<><><>0<>0<>f1ea4dbdceceae89ea87482ce6901b7f<>res://.godot/imported/circle_64x64.png-62000fb4df71575e034193c570e65f59.ctex::
 circuit.svg::CompressedTexture2D::1070659064708996005::1761343336::1761343336::1::::<><><>0<>0<>1d4ac827eec99064ad9c840f7aaf7932<>res://.godot/imported/circuit.svg-ae51e21777f061bfafa089c77f279bf0.ctex::
@@ -314,12 +314,14 @@ foot.png::CompressedTexture2D::1066560580666971390::1761343336::1761343336::1:::
 hand.png::CompressedTexture2D::7874939489146582305::1761343336::1761343336::1::::<><><>0<>0<>395e18abc33759829f931535ff779a95<>res://.godot/imported/hand.png-bcecc5b7414bc5df57081e9fb710d0da.ctex::
 head.png::CompressedTexture2D::200582351383320743::1761343336::1761343336::1::::<><><>0<>0<>5928c7517f5df1a4d2f80ab7954d799e<>res://.godot/imported/head.png-78cbb0c17d8a453b1894e31a05c3e0b9.ctex::
 red_face_back.png::CompressedTexture2D::3526130328406964028::1761343336::1761343336::1::::<><><>0<>0<>56778605d7d01e7f96ab1ee871140746<>res://.godot/imported/red_face_back.png-12352c3f96be4f9b26bf2bd58ba50435.ctex::
-::res://lessons/::1761770982
+::res://lessons/::1761945775
 character_body_2d.gd::GDScript::1841265502060115153::1761768066::0::1::::Runner<>CharacterBody2D<><>0<>0<><>::
 circut.tscn::PackedScene::652423006265758724::1761767919::0::1::::<><><>0<>0<><>::uid://cyi426tkmrmjy::::res://assets/circuit_obstacle.png
 game.gd::GDScript::3614030128747968852::1761769761::0::1::::<>Node2D<><>0<>0<><>::
-game.tscn::PackedScene::7004514031097780636::1761770982::0::1::::<><><>0<>0<><>::uid://cyi426tkmrmjy::::res://assets/circuit_obstacle.png<>uid://brqwsvyu3k3gi::::res://lessons/game.gd<>uid://btmrp4i4i0whr::::res://lessons/runner.tscn<>uid://l5vkm11cgaib::::res://lessons/simple_obstacle.tscn<>uid://jkbkug37g4vw::::res://lessons/circut.tscn<>uid://xl56q8amb611::::res://assets/finish_line/finish_line.tscn<>uid://cdcyvsn1fp8wa::::res://assets/countdown/count_down_theme.tres<>uid://57e8080cpukf::::res://assets/countdown/count_down.gd<>uid://dp1hn66gsihpv::::res://assets/blur.gdshader
-runner.tscn::PackedScene::3745841758514952767::1761767970::0::1::::<><><>0<>0<><>::uid://1h6myedkyblx::::res://lessons/character_body_2d.gd<>uid://bm8s1oaoxngwq::::res://assets/runner/runner_visual_red.tscn<>uid://dbcmxo51msi8m::::res://assets/runner/shadow.png<>uid://bwhexggpo0snf::::res://assets/character_contour.gdshader<>uid://bkq3gfbp5fwqx::::res://assets/circle_64x64.png
+game.tscn::PackedScene::7004514031097780636::1761945775::0::1::::<><><>0<>0<><>::uid://cyi426tkmrmjy::::res://assets/circuit_obstacle.png<>res://lessons/game.gd<>uid://btmrp4i4i0whr::::res://lessons/runner.tscn<>uid://l5vkm11cgaib::::res://lessons/simple_obstacle.tscn<>uid://jkbkug37g4vw::::res://lessons/circut.tscn<>uid://xl56q8amb611::::res://assets/finish_line/finish_line.tscn<>uid://cdcyvsn1fp8wa::::res://assets/countdown/count_down_theme.tres<>res://assets/countdown/count_down.gd<>uid://kqcrmexed4ch::::res://lessons/pause_screen.tscn
+pause_screen.gd::GDScript::8169039449786068270::1761945775::0::1::::<>Control<><>0<>1<><>::
+pause_screen.tscn::PackedScene::735070910437127415::1761945775::0::1::::<><><>0<>0<><>::uid://vxbfcnef0pvq::::res://assets/fonts/rubik/Rubik-Bold.ttf<>res://assets/blur.gdshader<>res://lessons/pause_screen.gd
+runner.tscn::PackedScene::3745841758514952767::1761945775::0::1::::<><><>0<>0<><>::res://lessons/character_body_2d.gd<>uid://bm8s1oaoxngwq::::res://assets/runner/runner_visual_red.tscn<>uid://dbcmxo51msi8m::::res://assets/runner/shadow.png<>res://assets/character_contour.gdshader<>uid://bkq3gfbp5fwqx::::res://assets/circle_64x64.png
 simple_obstacle.tscn::PackedScene::835302199056640545::1761767919::0::1::::<><><>0<>0<><>::uid://bhl4rcp3uh84b::::res://assets/simple_obstacle.svg
 test_particles.tscn::PackedScene::4199307032026816264::1761603810::0::1::::<><><>0<>0<><>::uid://tgs14f485wph::::res://assets/kenney-particles/smoke_04.png
 ::res://practices/::1761343336

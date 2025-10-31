@@ -1,9 +1,5 @@
-res://lessons/game.tscn
+res://lessons/pause_screen.tscn
 res://addons/gdpractice/assets/theme.tres
 res://assets/character_contour.gdshader
-res://lessons/runner.tscn
-res://lessons/simple_obstacle.tscn
-res://lessons/circut.tscn
-res://lessons/test_particles.tscn
-res://lessons/pause_screen.tscn
 res://lessons/pause_screen.gd
+res://lessons/game.tscn
