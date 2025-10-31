@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://c62bk8cggi6yq"]
 
-[ext_resource type="Texture2D" uid="uid://cyi426tkmrmjy" path="res://assets/circuit_obstacle.png" id="1_mhfxf"]
 [ext_resource type="Script" uid="uid://brqwsvyu3k3gi" path="res://lessons/game.gd" id="1_qqcej"]
 [ext_resource type="PackedScene" uid="uid://btmrp4i4i0whr" path="res://lessons/runner.tscn" id="1_yasw7"]
 [ext_resource type="PackedScene" uid="uid://l5vkm11cgaib" path="res://lessons/simple_obstacle.tscn" id="2_4o7yg"]
 [ext_resource type="PackedScene" uid="uid://jkbkug37g4vw" path="res://lessons/circut.tscn" id="4_d0cqr"]
+[ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="4_tpjcj"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="5_sepuf"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_viysf"]
 [ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
@@ -30,23 +30,25 @@ area_width = 256
 [node name="Circut BG" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(3999, 0)
-texture = ExtResource("1_mhfxf")
+texture = ExtResource("4_tpjcj")
 centered = false
 offset = Vector2(-4000, 0)
+metadata/_edit_lock_ = true
 
 [node name="simple obstacle" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(2365, 1685)
+position = Vector2(2433, 1682)
 
 [node name="simple obstacle2" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(935, 2054)
+position = Vector2(1027, 2043)
 
 [node name="simple obstacle3" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(1228, 466)
+position = Vector2(1412, 593)
 
 [node name="Circut" parent="." instance=ExtResource("4_d0cqr")]
 process_mode = 1
-visible = false
+z_index = -1
 position = Vector2(1918, 1355)
+metadata/_edit_lock_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
