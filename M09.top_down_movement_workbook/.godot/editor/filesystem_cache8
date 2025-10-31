@@ -1,6 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1761358432
-character_body_2d.gd::GDScript::-1::1761358408::0::1::::<>CharacterBody2D<>::
+::res://::1761799895
 icon_top_down_movement.png::CompressedTexture2D::4888025430757072173::1761196071::1761266903::1::::<><>::
 ::res://addons/::1761196075
 ::res://addons/gdpractice/::1761196075
@@ -11,7 +10,7 @@ gdpractice.gd::GDScript::-1::1761196074::0::1::::<>EditorPlugin<>::
 metadata.gd::GDScript::-1::1761196074::0::1::::<>Node<>::
 paths.gd::GDScript::-1::1761196074::0::1::::<>RefCounted<>::
 plugin.cfg::TextFile::-1::1761196074::0::1::::<><>::
-::res://addons/gdpractice/assets/::1761358281
+::res://addons/gdpractice/assets/::1761797917
 checkbox_empty.svg::CompressedTexture2D::159996384623349208::1761196074::1761266904::1::::<><>::
 checkbox_ticked.svg::CompressedTexture2D::4681739381960142151::1761196074::1761266904::1::::<><>::
 dash_border.png::CompressedTexture2D::5174105164185721961::1761196074::1761266904::1::::<><>::
@@ -20,7 +19,7 @@ input_arrow.svg::CompressedTexture2D::4441352498702649159::1761196074::176126690
 input_mouse_base.svg::CompressedTexture2D::7057538906146452317::1761196074::1761266904::1::::<><>::
 input_mouse_left_click.svg::CompressedTexture2D::3923731288610382921::1761196074::1761266904::1::::<><>::
 new_style_box_flat.tres::StyleBoxFlat::2828730235135847896::1761196074::0::1::::<><>::
-theme.tres::Theme::3147173487228338806::1761358281::0::1::::<><>::
+theme.tres::Theme::3147173487228338806::1761797917::0::1::::<><>::
 ::res://addons/gdpractice/assets/fonts/::1761266902
 Inter-Bold.ttf::FontFile::9167500186177253915::1761196074::1761266902::1::::<><>::
 Inter-BoldItalic.otf::FontFile::546728191683957199::1761196074::1761266902::1::::<><>::
@@ -103,9 +102,9 @@ reset_net_injector.gd::GDScript::-1::1761196075::0::1::::<>Node<>::
 ::res://addons/gdquest_theme_utils/::1761196075
 README.md::TextFile::-1::1761196075::0::1::::<><>::
 theme_utils.gd::GDScript::-1::1761196075::0::1::::<>RefCounted<>::
-::res://assets/::1761266906
+::res://assets/::1761797918
 blur.gdshader::Shader::-1::1761196071::0::1::::<><>::
-character_contour.gdshader::Shader::-1::1761196072::0::1::::<><>::
+character_contour.gdshader::Shader::-1::1761797918::0::1::::<><>::
 circle_32x32.png::CompressedTexture2D::8611442966255701042::1761196071::1761266903::1::::<><>::
 circle_64x64.png::CompressedTexture2D::3123050219582670775::1761196071::1761266903::1::::<><>::
 circuit.svg::CompressedTexture2D::1070659064708996005::1761196071::1761266904::1::::<><>::
@@ -315,10 +314,14 @@ foot.png::CompressedTexture2D::1066560580666971390::1761196074::1761266903::1:::
 hand.png::CompressedTexture2D::7874939489146582305::1761196074::1761266903::1::::<><>::
 head.png::CompressedTexture2D::200582351383320743::1761196074::1761266903::1::::<><>::
 red_face_back.png::CompressedTexture2D::3526130328406964028::1761196074::1761266903::1::::<><>::
-::res://lessons/::1761358408
-game.tscn::PackedScene::7004514031097780636::1761358408::0::1::::<><>::uid://btmrp4i4i0whr::::res://lessons/runner.tscn<>uid://l5vkm11cgaib::::res://lessons/simple_obstacle.tscn
-runner.tscn::PackedScene::3745841758514952767::1761358408::0::1::::<><>::uid://1h6myedkyblx::::res://character_body_2d.gd<>uid://c0i1ik45p7rhh::::res://assets/runner_down.png
-simple_obstacle.tscn::PackedScene::835302199056640545::1761358408::0::1::::<><>::uid://bhl4rcp3uh84b::::res://assets/simple_obstacle.svg
+::res://lessons/::1761797917
+character_body_2d.gd::GDScript::-1::1761797865::0::1::::Runner<>CharacterBody2D<>::
+circut.tscn::PackedScene::652423006265758724::1761718768::0::1::::<><>::uid://cyi426tkmrmjy::::res://assets/circuit_obstacle.png
+game.gd::GDScript::-1::1761797865::0::1::::<>Node2D<>::
+game.tscn::PackedScene::7004514031097780636::1761797917::0::1::::<><>::uid://cyi426tkmrmjy::::res://assets/circuit_obstacle.png<>res://lessons/game.gd<>uid://btmrp4i4i0whr::::res://lessons/runner.tscn<>uid://l5vkm11cgaib::::res://lessons/simple_obstacle.tscn<>uid://jkbkug37g4vw::::res://lessons/circut.tscn<>uid://xl56q8amb611::::res://assets/finish_line/finish_line.tscn<>uid://cdcyvsn1fp8wa::::res://assets/countdown/count_down_theme.tres<>res://assets/countdown/count_down.gd<>res://assets/blur.gdshader
+runner.tscn::PackedScene::3745841758514952767::1761797865::0::1::::<><>::uid://1h6myedkyblx::::res://lessons/character_body_2d.gd<>uid://bm8s1oaoxngwq::::res://assets/runner/runner_visual_red.tscn<>uid://dbcmxo51msi8m::::res://assets/runner/shadow.png<>uid://bwhexggpo0snf::::res://assets/character_contour.gdshader<>uid://bkq3gfbp5fwqx::::res://assets/circle_64x64.png
+simple_obstacle.tscn::PackedScene::835302199056640545::1761718765::0::1::::<><>::uid://bhl4rcp3uh84b::::res://assets/simple_obstacle.svg
+test_particles.tscn::PackedScene::4199307032026816264::1761718769::0::1::::<><>::uid://tgs14f485wph::::res://assets/kenney-particles/smoke_04.png
 ::res://practices/::1761196075
 ::res://practices/L2.P1.asteroid_field/::1761358408
 .file_checksums.json::JSON::-1::1761196075::0::1::::<><>::
