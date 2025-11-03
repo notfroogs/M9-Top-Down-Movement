@@ -24,9 +24,9 @@ func _physics_process(delta: float) -> void:
 		_runner_visual.angle = rotate_toward(_runner_visual.angle, direction.orthogonal().angle(), 8.0 * delta)
 		var current_speed_percent = velocity.length()/max_speed
 		_runner_visual.animation_name=(
-			RunnerVisual.Animations.WALK
+			RunnerVisual.Animations.RUN
 			if current_speed_percent > 0.8
-			else RunnerVisual.Animations.RUN
+			else RunnerVisual.Animations.WALK
 		)
 		_dust.emitting = true
 	else:

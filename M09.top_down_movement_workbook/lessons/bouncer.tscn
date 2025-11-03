@@ -1,10 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://budpgxkjtmw1f"]
+[gd_scene load_steps=14 format=3 uid="uid://b8n6hh47xoa86"]
 
-[ext_resource type="Script" uid="uid://1h6myedkyblx" path="res://lessons/character_body_2d.gd" id="1_o17vw"]
+[ext_resource type="Script" path="res://lessons/bouncer.gd" id="1_1u8i6"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_41ggd"]
-[ext_resource type="PackedScene" uid="uid://bm8s1oaoxngwq" path="res://assets/runner/runner_visual_red.tscn" id="3_1wh80"]
+[ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_purple.tscn" id="3_ily54"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="4_2lotv"]
-[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="5_wkdje"]
+[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="5_wkdje"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03faw"]
 radius = 23.0
@@ -40,9 +40,9 @@ shader_parameter/line_thickness = 4.0
 [sub_resource type="ViewportTexture" id="ViewportTexture_p25w4"]
 viewport_path = NodePath("SubViewport")
 
-[node name="Runner" type="CharacterBody2D"]
+[node name="Bouncer" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_o17vw")
+script = ExtResource("1_1u8i6")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 self_modulate = Color(0, 0, 0, 0.156863)
@@ -58,7 +58,7 @@ shape = SubResource("CircleShape2D_03faw")
 transparent_bg = true
 size = Vector2i(124, 150)
 
-[node name="RunnerVisualRed" parent="SubViewport" instance=ExtResource("3_1wh80")]
+[node name="RunnerVisualPurple" parent="SubViewport" instance=ExtResource("3_ily54")]
 unique_name_in_owner = true
 position = Vector2(62, 120)
 scale = Vector2(0.5, 0.5)

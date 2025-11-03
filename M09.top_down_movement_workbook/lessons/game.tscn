@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://c62bk8cggi6yq"]
 
-[ext_resource type="Script" uid="uid://brqwsvyu3k3gi" path="res://lessons/game.gd" id="1_qqcej"]
+[ext_resource type="Script" path="res://lessons/game.gd" id="1_qqcej"]
 [ext_resource type="PackedScene" uid="uid://btmrp4i4i0whr" path="res://lessons/runner.tscn" id="1_yasw7"]
 [ext_resource type="PackedScene" uid="uid://l5vkm11cgaib" path="res://lessons/simple_obstacle.tscn" id="2_4o7yg"]
 [ext_resource type="PackedScene" uid="uid://jkbkug37g4vw" path="res://lessons/circut.tscn" id="4_d0cqr"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="4_tpjcj"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="5_sepuf"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_viysf"]
-[ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
+[ext_resource type="Script" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
 [ext_resource type="PackedScene" uid="uid://kqcrmexed4ch" path="res://lessons/pause_screen.tscn" id="9_26ros"]
 
 [node name="Game" type="Node2D"]
@@ -77,4 +77,3 @@ metadata/_edit_use_anchors_ = true
 [node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_26ros")]
 process_mode = 3
 visible = false
-animation_durration = 2.3
