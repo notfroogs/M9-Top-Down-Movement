@@ -2,6 +2,8 @@ extends Node2D
 @onready var _finish_line: FinishLine = %FinishLine
 @onready var _runner: Runner = %Runner
 @onready var _count_down: CountDown = %CountDown
+@onready var _bouncer: CharacterBody2D = %Bouncer
+@onready var timer: Timer = %Timer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +13,8 @@ func _ready() -> void:
 			return
 		var runner := body as Runner
 		runner.set_physics_process(false)
+		_bouncer.set_physics_process(false)
+		_bouncer.stop()
 		var destination_position :=(
 			_finish_line.global_position +Vector2(0,64)
 		)
@@ -24,7 +28,13 @@ func _ready() -> void:
 	)
 	_count_down.start_counting()
 	_runner.set_physics_process(false)
+	_bouncer.set_physics_process(false)
 	_count_down.counting_finished.connect(
 		func() -> void:
 			_runner.set_physics_process(true)
+			await get_tree().create_timer(4.0).timeout
+			on_timer_timeout()
 )
+
+func on_timer_timeout():
+	_bouncer.set_physics_process(true)

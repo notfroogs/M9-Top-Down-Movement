@@ -14,3 +14,4 @@ res://assets/blur.gdshader
 res://assets/finish_line/finish_line_visual.gdshader
 res://lessons/bouncer.gd
 res://lessons/character_body_2d.gd
+res://lessons/game.gd

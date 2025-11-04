@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c62bk8cggi6yq"]
+[gd_scene load_steps=11 format=3 uid="uid://c62bk8cggi6yq"]
 
 [ext_resource type="Script" path="res://lessons/game.gd" id="1_qqcej"]
 [ext_resource type="PackedScene" uid="uid://btmrp4i4i0whr" path="res://lessons/runner.tscn" id="1_yasw7"]
@@ -9,6 +9,7 @@
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_viysf"]
 [ext_resource type="Script" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
 [ext_resource type="PackedScene" uid="uid://kqcrmexed4ch" path="res://lessons/pause_screen.tscn" id="9_26ros"]
+[ext_resource type="PackedScene" uid="uid://b8n6hh47xoa86" path="res://lessons/bouncer.tscn" id="10_puat5"]
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -17,9 +18,13 @@ script = ExtResource("1_qqcej")
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
 unique_name_in_owner = true
 process_mode = 1
-position = Vector2(1936, 1272)
+position = Vector2(596, 1119)
 
 [node name="Camera2D" type="Camera2D" parent="Runner"]
+
+[node name="Bouncer" parent="." instance=ExtResource("10_puat5")]
+unique_name_in_owner = true
+position = Vector2(604, 1630)
 
 [node name="FinishLine" parent="." instance=ExtResource("5_sepuf")]
 unique_name_in_owner = true
@@ -77,3 +82,8 @@ metadata/_edit_use_anchors_ = true
 [node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_26ros")]
 process_mode = 3
 visible = false
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 4.281
+one_shot = true
