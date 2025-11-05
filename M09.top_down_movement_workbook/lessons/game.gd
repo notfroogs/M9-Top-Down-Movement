@@ -32,7 +32,7 @@ func _ready() -> void:
 	_count_down.counting_finished.connect(
 		func() -> void:
 			_runner.set_physics_process(true)
-			await get_tree().create_timer(4.0).timeout
+			await get_tree().create_timer(2.0).timeout
 			on_timer_timeout()
 )
 

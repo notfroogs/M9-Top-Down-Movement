@@ -1,4 +1,6 @@
 RayCast2D
+Node2D
+Camera2D
 Timer
 CollisionShape2D
 Area2D
@@ -10,6 +12,3 @@ Label
 PanelContainer
 ColorRect
 Control
-CanvasLayer
-CountDown
-StaticBody2D
