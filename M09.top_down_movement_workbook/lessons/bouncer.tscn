@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://b8n6hh47xoa86"]
 
-[ext_resource type="Script" uid="uid://d2q8ndtejug4m" path="res://lessons/bouncer.gd" id="1_1u8i6"]
+[ext_resource type="Script" path="res://lessons/bouncer.gd" id="1_1u8i6"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_41ggd"]
 [ext_resource type="PackedScene" uid="uid://hjn4sr1lgmmx" path="res://assets/runner/runner_visual_purple.tscn" id="3_ily54"]
 [ext_resource type="Texture2D" uid="uid://bkq3gfbp5fwqx" path="res://assets/circle_64x64.png" id="4_2lotv"]
-[ext_resource type="Shader" uid="uid://bwhexggpo0snf" path="res://assets/character_contour.gdshader" id="5_wkdje"]
+[ext_resource type="Shader" path="res://assets/character_contour.gdshader" id="5_wkdje"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03faw"]
 radius = 23.0
@@ -70,8 +70,8 @@ scale = Vector2(0.5, 0.5)
 unique_name_in_owner = true
 position = Vector2(0, -66)
 emitting = false
-texture = ExtResource("4_2lotv")
 process_material = SubResource("ParticleProcessMaterial_bq1bm")
+texture = ExtResource("4_2lotv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_wvxkf")
@@ -90,17 +90,17 @@ unique_name_in_owner = true
 position = Vector2(0, -27)
 
 [node name="RayCast2D" type="RayCast2D" parent="RayCasts"]
-rotation = 0.78743297
-target_position = Vector2(88.3896, 0.5272522)
+rotation = 0.787433
+target_position = Vector2(88.3896, 0.527252)
 
 [node name="RayCast2D3" type="RayCast2D" parent="RayCasts"]
-rotation = -0.0028370619
-target_position = Vector2(99.829384, 60.28347)
+rotation = -0.00283706
+target_position = Vector2(99.8294, 60.2835)
 
 [node name="RayCast2D2" type="RayCast2D" parent="RayCasts"]
-rotation = 2.3713667
-target_position = Vector2(92.63106, -0.6983433)
+rotation = 2.37137
+target_position = Vector2(92.6311, -0.698343)
 
 [node name="RayCast2D4" type="RayCast2D" parent="RayCasts"]
-rotation = 3.1290934
-target_position = Vector2(106.67917, -53.670822)
+rotation = 3.12909
+target_position = Vector2(106.679, -53.6708)
